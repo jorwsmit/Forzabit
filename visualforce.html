@@ -1,0 +1,151 @@
+<apex:page standardController="opportunity" standardStylesheets="false"  applyHtmlTag="true" applyBodyTag="false" docType="html-5.0">
+    
+    <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" lang="en">
+        <head>
+            <meta charset="utf-8" />
+            <meta http-equiv="x-ua-compatible" content="ie=edge" />
+            <title>Pipeline</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <apex:stylesheet value="{!URLFOR($Resource.LightningDesign, 'assets/styles/salesforce-lightning-design-system-vf.min.css')}" />
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"/>
+        </head>
+        <body>
+            
+            <div class="LightningDesign">
+                <div class="slds-grid">
+                    <div class="slds-tabs--path" role="application">
+                        <ul class="slds-tabs--path__nav" role="tablist">
+                            <li id="1" class="slds-tabs--path__item slds-is-incomplete" role="presentation">
+                                <a class="slds-tabs--path__link" aria-controls="content-path-1" aria-selected="false" tabindex="-1" role="tab" href="javascript:void(0);" aria-live="assertive">
+                                    <span class="slds-tabs--path__stage"><i class="fa fa-check" aria-hidden="true"></i></span>
+                                    <span class="slds-tabs--path__title">D</span>
+                                </a>
+                            </li>
+                            <li id="2" class="slds-tabs--path__item slds-is-incomplete" role="presentation">
+                                <a class="slds-tabs--path__link" aria-controls="content-path-1" aria-selected="false" tabindex="-1" role="tab" href="javascript:void(0);" aria-live="assertive">
+                                    <span class="slds-tabs--path__stage"><i class="fa fa-check" aria-hidden="true"></i></span>
+                                    <span class="slds-tabs--path__title">C</span>
+                                </a>
+                            </li>
+                            <li id="3" class="slds-tabs--path__item slds-is-incomplete" role="presentation">
+                                <a class="slds-tabs--path__link" aria-controls="content-path-1" aria-selected="false" tabindex="-1" role="tab" href="javascript:void(0);" aria-live="assertive">
+                                    <span class="slds-tabs--path__stage"><i class="fa fa-check" aria-hidden="true"></i></span>
+                                    <span class="slds-tabs--path__title">C1</span>
+                                </a>
+                            </li>
+                            <li id="4" class="slds-tabs--path__item slds-is-incomplete" role="presentation">
+                                <a class="slds-tabs--path__link" aria-controls="content-path-1" aria-selected="false" tabindex="-1" role="tab" href="javascript:void(0);" aria-live="assertive">
+                                    <span class="slds-tabs--path__stage"><i class="fa fa-check" aria-hidden="true"></i></span>
+                                    <span class="slds-tabs--path__title">C2</span>
+                                </a>
+                            </li>
+                            <li id="5" class="slds-tabs--path__item slds-is-incomplete" role="presentation">
+                                <a class="slds-tabs--path__link" aria-controls="content-path-1" aria-selected="false" tabindex="-1" role="tab" href="javascript:void(0);" aria-live="assertive">
+                                    <span class="slds-tabs--path__stage"><i class="fa fa-check" aria-hidden="true"></i></span>
+                                    <span class="slds-tabs--path__title">C3</span>
+                                </a>
+                            </li>
+                            <li id="6" class="slds-tabs--path__item slds-is-incomplete" role="presentation">
+                                <a class="slds-tabs--path__link" aria-controls="content-path-1" aria-selected="false" tabindex="-1" role="tab" href="javascript:void(0);" aria-live="assertive">
+                                    <span class="slds-tabs--path__stage"><i class="fa fa-check" aria-hidden="true"></i></span>
+                                    <span class="slds-tabs--path__title">B</span>
+                                </a>
+                            </li>
+                            <li id="7" class="slds-tabs--path__item slds-is-incomplete" role="presentation">
+                                <a class="slds-tabs--path__link" aria-controls="content-path-1" aria-selected="false" tabindex="-1" role="tab" href="javascript:void(0);" aria-live="assertive">
+                                    <span class="slds-tabs--path__stage"><i class="fa fa-check" aria-hidden="true"></i></span>
+                                    <span class="slds-tabs--path__title">B1</span>
+                                </a>
+                            </li>
+                            <li id="8" class="slds-tabs--path__item slds-is-incomplete" role="presentation">
+                                <a class="slds-tabs--path__link" aria-controls="content-path-1" aria-selected="false" tabindex="-1" role="tab" href="javascript:void(0);" aria-live="assertive">
+                                    <span class="slds-tabs--path__stage"><i class="fa fa-check" aria-hidden="true"></i></span>
+                                    <span class="slds-tabs--path__title">B2</span>
+                                </a>
+                            </li>
+                            <li id="9" class="slds-tabs--path__item slds-is-incomplete" role="presentation">
+                                <a class="slds-tabs--path__link" aria-controls="content-path-1" aria-selected="false" tabindex="-1" role="tab" href="javascript:void(0);" aria-live="assertive">
+                                    <span class="slds-tabs--path__stage"><i class="fa fa-check" aria-hidden="true"></i></span>
+                                    <span class="slds-tabs--path__title">B3</span>
+                                </a>
+                            </li>
+                            <li id="10" class="slds-tabs--path__item slds-is-incomplete" role="presentation">
+                                <a class="slds-tabs--path__link" aria-controls="content-path-1" aria-selected="false" tabindex="-1" role="tab" href="javascript:void(0);" aria-live="assertive">
+                                    <span class="slds-tabs--path__stage"><i class="fa fa-check" aria-hidden="true"></i></span>
+                                    <span class="slds-tabs--path__title">A</span>
+                                </a>
+                            </li>
+                            <li id="11" class="slds-tabs--path__item slds-is-incomplete" role="presentation">
+                                <a class="slds-tabs--path__link" aria-controls="content-path-1" aria-selected="false" tabindex="-1" role="tab" href="javascript:void(0);" aria-live="assertive">
+                                    <span class="slds-tabs--path__stage"><i class="fa fa-check" aria-hidden="true"></i></span>
+                                    <span class="slds-tabs--path__title">A1</span>
+                                </a>
+                            </li>
+                            <li id="12" class="slds-tabs--path__item slds-is-incomplete" role="presentation">
+                                <a class="slds-tabs--path__link" aria-controls="content-path-1" aria-selected="false" tabindex="-1" role="tab" href="javascript:void(0);" aria-live="assertive">
+                                    <span class="slds-tabs--path__stage"><i class="fa fa-check" aria-hidden="true"></i></span>
+                                    <span class="slds-tabs--path__title">A2</span>
+                                </a>
+                            </li>
+                            <li id="13" class="slds-tabs--path__item slds-is-incomplete" role="presentation">
+                                <a class="slds-tabs--path__link" aria-controls="content-path-1" aria-selected="false" tabindex="-1" role="tab" href="javascript:void(0);" aria-live="assertive">
+                                    <span class="slds-tabs--path__stage"><i class="fa fa-check" aria-hidden="true"></i></span>
+                                    <span class="slds-tabs--path__title">A3</span>
+                                </a>
+                            </li>
+                            <li id="14" class="slds-tabs--path__item slds-is-incomplete" role="presentation">
+                                <a class="slds-tabs--path__link" aria-controls="content-path-1" aria-selected="false" tabindex="-1" role="tab" href="javascript:void(0);" aria-live="assertive">
+                                    <span class="slds-tabs--path__stage"><i class="fa fa-check" aria-hidden="true"></i></span>
+                                    <span class="slds-tabs--path__title">Closed Won</span>
+                                </a>
+                            </li>
+                            <li id="15" class="slds-tabs--path__item slds-is-incomplete" role="presentation">
+                                <a class="slds-tabs--path__link" aria-controls="content-path-1" aria-selected="false" tabindex="-1" role="tab" href="javascript:void(0);" aria-live="assertive">
+                                    <span class="slds-tabs--path__stage"><i class="fa fa-check" aria-hidden="true"></i></span>
+                                    <span class="slds-tabs--path__title">Closed Lost</span>
+                                </a>
+                            </li>
+                            <li id="16" class="slds-tabs--path__item slds-is-incomplete" role="presentation">
+                                <a class="slds-tabs--path__link" aria-controls="content-path-1" aria-selected="false" tabindex="-1" role="tab" href="javascript:void(0);" aria-live="assertive">
+                                    <span class="slds-tabs--path__stage"><i class="fa fa-check" aria-hidden="true"></i></span>
+                                    <span class="slds-tabs--path__title">Stalled</span>
+                                </a>
+                            </li>
+                            <li id="17" class="slds-tabs--path__item slds-is-incomplete" role="presentation">
+                                <a class="slds-tabs--path__link" aria-controls="content-path-1" aria-selected="false" tabindex="-1" role="tab" href="javascript:void(0);" aria-live="assertive">
+                                    <span class="slds-tabs--path__stage"><i class="fa fa-check" aria-hidden="true"></i></span>
+                                    <span class="slds-tabs--path__title">Dead</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script>
+            var stageNum=0;
+            if('{!opportunity.stageName}'=='D') stageNum=1;
+            if('{!opportunity.stageName}'=='C') stageNum=2;
+            if('{!opportunity.stageName}'=='C1') stageNum=3;
+            if('{!opportunity.stageName}'=='C2') stageNum=4;
+            if('{!opportunity.stageName}'=='C3') stageNum=5;
+            if('{!opportunity.stageName}'=='B') stageNum=6;
+            if('{!opportunity.stageName}'=='B1') stageNum=7;
+            if('{!opportunity.stageName}'=='B2') stageNum=8;
+            if('{!opportunity.stageName}'=='B3') stageNum=9;
+            if('{!opportunity.stageName}'=='A') stageNum=10;
+            if('{!opportunity.stageName}'=='A1') stageNum=11;
+            if('{!opportunity.stageName}'=='A2') stageNum=12;
+            if('{!opportunity.stageName}'=='A3') stageNum=13;
+            if('{!opportunity.stageName}'=='Closed Won') stageNum=14;
+            if('{!opportunity.stageName}'=='Closed Lost') stageNum=15;
+            if('{!opportunity.stageName}'=='Stalled') stageNum=16;
+            if('{!opportunity.stageName}'=='Dead') stageNum=17;
+            for(var i=0; i<stageNum; i++){
+                $( "ul li:nth-child("+i.toString()+")" ).removeClass('slds-tabs--path__item slds-is-incomplete').addClass('slds-tabs--path__item slds-is-complete');
+            }
+        	$( "ul li:nth-child("+stageNum.toString()+")" ).removeClass('slds-tabs--path__item slds-is-incomplete').addClass('slds-tabs--path__item slds-is-current');
+        </script>
+    </html>
+</apex:page>
