@@ -131,10 +131,22 @@
                 for(var i=1; i<=stageNum; i++){
                 	$( "ul li:nth-child("+i.toString()+")" ).hide();
             	}
-                if('{!opportunity.stageName}'=='Closed Won') stageNum=11;
-                if('{!opportunity.stageName}'=='Closed Lost') stageNum=12;
-                if('{!opportunity.stageName}'=='Stalled') stageNum=13;
-                if('{!opportunity.stageName}'=='Dead') stageNum=14;
+                if('{!opportunity.stageName}'=='Closed Won'){
+                    stageNum=11;
+                	$( "#11" ).css( "background-color", "#4bca81");
+                }
+                if('{!opportunity.stageName}'=='Closed Lost'){
+                    stageNum=12;
+                    $( "#12" ).css( "background-color", "#c23934");
+                }
+                if('{!opportunity.stageName}'=='Stalled'){
+                    stageNum=13;
+                    $( "#13" ).css( "background-color", "#ffb75d");
+                }
+                if('{!opportunity.stageName}'=='Dead'){
+                    stageNum=14;
+                    $( "#14" ).css( "background-color", "#c23934");
+                }        
         		$( "ul li:nth-child("+stageNum.toString()+")" ).removeClass('slds-tabs--path__item slds-is-incomplete').addClass('slds-tabs--path__item slds-is-current');
             }
             
